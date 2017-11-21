@@ -1,0 +1,14 @@
+﻿<Window x:Class="_006_InterfazPersonas.LogroVentana"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_006_InterfazPersonas"
+        mc:Ignorable="d"
+        Title="LogroVentana" Height="300" Width="300">
+    <StackPanel Background="#B2DFDB">
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" FontSize="20" TextAlignment="Center">Enhorabuena has descubierto el flamante menú oculto de la aplicación. 
+            Ingrese su nombre y le llamaremos para trabajar en las oficinas de Google. Pero recuerde, hoy no, mañaaaaaaaaaaana.</TextBlock>
+        <TextBox Name="txbLogro" MaxWidth="100" Margin="20" MinHeight="25"></TextBox>
+    </StackPanel>
+</Window>

@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="_006_InterfazPersonas.InsertarControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="430" d:DesignWidth="300">
+
+    <!--Formulario-->
+    <StackPanel x:Name="spFormulario" Background="#B2DFDB" >
+
+        <Label Content="INSERTAR PERSONA" Foreground="#004D40" Margin="0,10,0,20" FontSize="25" FontWeight="Bold" HorizontalAlignment="Center" FontFamily="Segoe UI Black"/>
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="4.4*"/>
+                <ColumnDefinition Width="9*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="DNI:" Grid.Row="0" Margin="12,8" Foreground="#004D40" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBox Name="txbDni" Grid.Column="1" Margin="12,8" MinHeight="30" MinWidth="100" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+
+            <TextBlock Text="Nombre:" Grid.Row="1" Margin="12,8" Foreground="#004D40" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBox Name="txbNombre" Grid.Row="1" Grid.Column="1" MinHeight="30" Margin="12,8" MinWidth="200" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+
+            <TextBlock Text="Apellidos:" Grid.Row="2" Margin="12,8" Foreground="#004D40" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBox Name="txbApellidos" Grid.Row="2"  Grid.Column="1" MinHeight="30" Margin="12,8" MinWidth="300" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+
+            <TextBlock Text="Fecha de Nacimiento:" Grid.Row="3" Margin="12,8" Foreground="#004D40" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
+            <DatePicker Name="dpFecha" Grid.Row="3" Grid.Column="1" Margin="12,8" MinHeight="30" MaxWidth="100" HorizontalAlignment="Left"/>
+
+            <TextBlock Text="Sexo:" Grid.Row="4" Margin="12,8" Foreground="#004D40" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
+            <StackPanel Grid.Row="4"  Grid.Column="1" Margin="12,8">
+                <RadioButton Name="rbHombre" Content="Hombre" FontSize="16"/>
+                <RadioButton Name="rbMujer" Content="Mujer" FontSize="16"/>
+            </StackPanel>
+
+            <TextBlock Text="Peso:" Grid.Row="5" Margin="12,8" Foreground="#004D40" FontSize="16" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBox Name="txbPeso" Grid.Row="5"  Grid.Column="1" Margin="12,8" MinHeight="30" MinWidth="50" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+
+            <TextBlock Text="Altura:" Grid.Row="6" Margin="12,8" Foreground="#004D40" FontSize="16" FontWeight="Bold" VerticalAlignment="Center"/>
+            <TextBox Name="txbAltura" Grid.Row="6"  Grid.Column="1" Margin="12,8" MinHeight="30" MinWidth="50" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+
+            <Button x:Name="btnAdd" Margin="12,20,12,0" MaxWidth="70"  Grid.Row="7" Grid.ColumnSpan="2" Click="btnAdd_Click" ToolTip="Insertar">
+                <StackPanel>
+                    <Image Source="Images/plus.png" MaxWidth="50" ToolTip="Insertar"/>
+                </StackPanel>
+            </Button>
+
+        </Grid>
+    </StackPanel>
+</UserControl>
