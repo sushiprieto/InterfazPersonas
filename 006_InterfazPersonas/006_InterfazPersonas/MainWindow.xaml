@@ -50,6 +50,14 @@
                 </Button.Template>
             </Button>
 
+            <Button Name="btnNombre" Click="btnNombre_Click" Margin="8">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image Source="Images/resume.png" ToolTip="Añadir Usuario"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
             <Button Name="btnAlta" Click="btnAlta_Click" Margin="8">
                 <Button.Template>
                     <ControlTemplate>

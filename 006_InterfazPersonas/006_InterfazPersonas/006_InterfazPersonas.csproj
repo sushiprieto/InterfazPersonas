@@ -59,6 +59,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="BuscarNombre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ConsultarDNIControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +82,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuscarNombre.xaml.cs">
+      <DependentUpon>BuscarNombre.xaml</DependentUpon>
     </Compile>
     <Compile Include="ConsultarDNIControl.xaml.cs">
       <DependentUpon>ConsultarDNIControl.xaml</DependentUpon>
@@ -164,6 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\shrek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\resume.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

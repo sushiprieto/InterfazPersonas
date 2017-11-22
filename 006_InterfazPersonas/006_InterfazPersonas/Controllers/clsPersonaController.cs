@@ -50,6 +50,28 @@ namespace _006_InterfazPersonas.Controllers
         }
 
         /// <summary>
+        /// Metodo que borra una persona en funcion del nombre
+        /// </summary>
+        /// <param name="borrar"></param>
+        public static void BorrarPersona(string borrar)
+        {
+
+            //OPCION 1
+            //Recorro la lista de personas y cojo el nombre que quiero borrar y lo borro las personas que tengan ese nombre
+            foreach (clsPersona persona in personas.ToArray())
+            {
+                if (persona.nombre == borrar)
+                    personas.Remove(persona);
+            }
+        
+            //OPCION 2
+            //He usado expresiones lambda donde usas el RemoveAll() y le pasas el campo mediante el cual
+            //uso para borrar y se lo igualo a la variable que le pregunto al usuario
+            //personas.RemoveAll(x => x.nombre == borrar);
+
+        }
+
+        /// <summary>
         /// Muestra la persona mas alta
         /// </summary>
         /// <returns></returns>

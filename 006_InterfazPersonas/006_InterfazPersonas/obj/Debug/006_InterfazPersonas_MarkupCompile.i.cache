@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\VisualStudio2017\DI\006_InterfazPersonas\006_InterfazPersonas\App.xaml
-61350461672
+7513268324
 
-16-936444753
+17-1333481619
 151984215308
-ConsultarDNIControl.xaml;InsertarControl.xaml;LogroVentana.xaml;MainWindow.xaml;MasAltaControl.xaml;MenosPesoControl.xaml;
+BuscarNombre.xaml;ConsultarDNIControl.xaml;InsertarControl.xaml;LogroVentana.xaml;MainWindow.xaml;MasAltaControl.xaml;MenosPesoControl.xaml;
 
-True
+False
 

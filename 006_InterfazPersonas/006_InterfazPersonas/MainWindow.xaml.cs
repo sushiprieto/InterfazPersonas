@@ -46,6 +46,7 @@ namespace _006_InterfazPersonas
             if (!spFormulario.Children.Contains(InsertarControl.Instance))
             {
                 spFormulario.Children.Add(InsertarControl.Instance);
+                spFormulario.Children.Remove(BuscarNombre.Instance);
                 spFormulario.Children.Remove(MasAltaControl.Instance);
                 spFormulario.Children.Remove(ConsultarDNIControl.Instance);
                 spFormulario.Children.Remove(MenosPesoControl.Instance);
@@ -57,6 +58,21 @@ namespace _006_InterfazPersonas
 
         }
 
+        private void btnNombre_Click(object sender, RoutedEventArgs e)
+        {
+            if (!spFormulario.Children.Contains(BuscarNombre.Instance))
+            {
+                spFormulario.Children.Add(BuscarNombre.Instance);
+                spFormulario.Children.Remove(MasAltaControl.Instance);
+                spFormulario.Children.Remove(ConsultarDNIControl.Instance);
+                spFormulario.Children.Remove(MenosPesoControl.Instance);
+                spFormulario.Children.Remove(InsertarControl.Instance);
+            }
+
+            lblPresentacion.Visibility = Visibility.Collapsed;
+            grdAnimaciones.Visibility = Visibility.Collapsed;
+        }
+
         private void btnAlta_Click(object sender, RoutedEventArgs e)
         {
             if (!spFormulario.Children.Contains(MasAltaControl.Instance))
@@ -65,9 +81,11 @@ namespace _006_InterfazPersonas
                 spFormulario.Children.Remove(ConsultarDNIControl.Instance);
                 spFormulario.Children.Remove(MenosPesoControl.Instance);
                 spFormulario.Children.Remove(InsertarControl.Instance);
+                spFormulario.Children.Remove(BuscarNombre.Instance);
             }
 
-            lblPresentacion.Text = "";
+            lblPresentacion.Visibility = Visibility.Collapsed;
+            grdAnimaciones.Visibility = Visibility.Collapsed;
 
         }
 
@@ -79,9 +97,11 @@ namespace _006_InterfazPersonas
                 spFormulario.Children.Remove(MenosPesoControl.Instance);
                 spFormulario.Children.Remove(InsertarControl.Instance);
                 spFormulario.Children.Remove(MasAltaControl.Instance);
+                spFormulario.Children.Remove(BuscarNombre.Instance);
             }
 
-            lblPresentacion.Text = "";
+            lblPresentacion.Visibility = Visibility.Collapsed;
+            grdAnimaciones.Visibility = Visibility.Collapsed;
 
         }
 
@@ -93,9 +113,11 @@ namespace _006_InterfazPersonas
                 spFormulario.Children.Remove(InsertarControl.Instance);
                 spFormulario.Children.Remove(MasAltaControl.Instance);
                 spFormulario.Children.Remove(ConsultarDNIControl.Instance);
+                spFormulario.Children.Remove(BuscarNombre.Instance);
             }
 
-            lblPresentacion.Text = "";
+            lblPresentacion.Visibility = Visibility.Collapsed;
+            grdAnimaciones.Visibility = Visibility.Collapsed;
 
         }
 
@@ -149,5 +171,6 @@ namespace _006_InterfazPersonas
             win.Show();
 
         }
+
     }
 }
